@@ -25,8 +25,31 @@ body {
   .sidebar-dark .nav-item .nav-link {
     color: rgba(255,255,255,.8);
   }
-
+.nav-item{
+    cursor: pointer;
+}
   .nav-item:hover {
     background-color: #c83b10e2;
+
+  }
+  .opciones{
+    margin-left: 16rem;
+  }
+  .btn-primary {
+    background-color: #D74B1F!important;
+}
+  
+  .page-item.active .page-link {
+    background-color: #D74B1F!important;
+  }
+  .border-left-primary{
+border-color: #D74B1F;
+border-left:10px solid;
+  }
+  .icono{
+    color: #D74B1F;
+  }
+  .card{
+    border-color: #D74B1F;
     
   }
