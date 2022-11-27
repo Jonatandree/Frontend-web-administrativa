@@ -62,10 +62,16 @@
                     <span> Ordenes</span></a>
             </li>
             <hr class="sidebar-divider">
-            <li class="nav-item active">
-                <a class="nav-link" onclick="seleccionarOpcion(5)">
+            <li class="nav-item dropdown">
+                <a class="nav-link" dropdown-toggle role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <i class="fa-solid fa-motorcycle"></i>
-                    <span> Motoristas</span></a>
+                    <span> Motoristas</span></a> 
+                </a>
+                    
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item menuDesplegable " onclick="seleccionarOpcion(7)">Solicitudes</a></li>
+                        <li><a class="dropdown-item menuDesplegable"  onclick="seleccionarOpcion(5)">Entregas</a></li>
+                      </ul>
             </li>
             <hr class="sidebar-divider">
             <li class="nav-item ">
@@ -73,7 +79,7 @@
                     <i class="fa-solid fa-user"></i>
                     <span> Clientes</span></a>
             </li>
-            
+
             <hr class="sidebar-divider">
 
             
@@ -399,7 +405,7 @@
                             
                         </div>
                         <div class="col-auto">
-                           <h3>  <i class="fa-solid fa-money-check icono"></i></h3>
+                            <h3><i class="fa-solid fa-money-check icono"></i></h3>
                         </div>
                     </div>
                 </div>
@@ -473,6 +479,105 @@
       <section id="contenido5" style="display:none;">
             <h1> Hola Motoristas</h1>
              </section> 
+
+    <section id="contenido7" style="display:none;">
+             
+            <br>
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-primary shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                    Solicitudes</div>
+                                    
+                            </div>
+                            <div class="col-auto">
+                                <h3>  <i class="fa-solid fa-motorcycle icono"></i></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           <hr>
+           <div class="card shadow mb-4">
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">SOLICITUDES</h6>
+            </div>
+            <div class="card-body">
+                
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped table-hover" id="datosSolicitudes" width="100%" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Correo</th>
+                                <th>Acción</th>
+                            </tr>
+                        </thead>
+                        <tfoot>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Correo</th>
+                                <th>Acción</th>
+                            </tr>
+                        </tfoot>
+                        <tbody>
+                            <tr>
+                                <td>Juan garcia</td>
+                                <td>Juangarcia@gmail.com</td>
+                            <td>
+                                <button class="btn btn-primary boton"><i class="fa-solid fa-check"></i></button>
+                                <button class="btn btn-primary boton"><i class="fa-solid fa-x"></i></button>
+                            </td>
+                            </tr>
+                            <tr>
+                                <td>Lourdes molina</td>
+                                <td>lour@gmail.com</td>
+                                <td>
+                                <button class="btn btn-primary boton"><i class="fa-solid fa-check"></i></button>
+                                <button class="btn btn-primary boton"><i class="fa-solid fa-x"></i></button>
+                            </td>
+                            </tr>
+                            <tr>
+                                <td>Erick Velasquez</td>
+                                <td>evela@yahoo.com</td>
+                                <td>
+                                <button class="btn btn-primary boton"><i class="fa-solid fa-check"></i></button>
+                                <button class="btn btn-primary boton"><i class="fa-solid fa-x"></i></button>
+                            </td>
+                            </tr>
+                            <tr>
+                                <td>Omar Lemus</td>
+                                <td>lemusomar@gmail.com</td>
+                                <td>
+                                <button class="btn btn-primary boton"><i class="fa-solid fa-check"></i></button>
+                                <button class="btn btn-primary boton"><i class="fa-solid fa-x"></i></button>
+                            </td>
+                            </tr>
+                            <tr>
+                                <td>Alexander Inestroza</td>
+                                <td>Aineztroza@unah.com</td>
+                                <td>
+                                <button class="btn btn-primary boton"><i class="fa-solid fa-check"></i></button>
+                                <button class="btn btn-primary boton"><i class="fa-solid fa-x"></i></button>
+                            </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        
+           </div>
+        <footer class="sticky-footer bg-white">
+            <div class="container my-auto">
+                <div class="copyright text-center my-auto">
+                    <span>Copyright &copy; Aleros 2022</span>
+                </div>
+            </div>
+        </footer> 
+                     
+     </section> 
 
       <section id="contenido6" style="display:none;">
            <h1> Hola clientes</h1>
