@@ -97,6 +97,21 @@ const seleccionarOpcion = (opcion) => {
     }
 }
 
+const listaCategorias = async()=>{
+    try{
+        const response= await fetch('http://localhost:3002/categorias');
+        const data = response.json();
+        console.log(data);
+    }catch(ex){
+        alert(ex);
+    }
+};
+
+window.addEventListener("cargando", async()=>{
+    await listaCategorias();
+})
+
+
 
 $(document).ready(function () {
     $('#datosCategorias').DataTable();
